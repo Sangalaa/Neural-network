@@ -31,4 +31,4 @@ predictions = predict(model, Xtest, ytest);
 * **Adam Bublavý** - *Initial work* - [Sangalaa](https://github.com/Sangalaa)
 
 ## Licence
-This project is licensed under the GNU General Public License v3.0 - see the [LICENCE](LICENCE) file for details.
+This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](LICENSE) file for details.
