@@ -20,4 +20,6 @@ function [J, grad] = classificationCostFunction(model, X, y, lambda)
   
   J = sum(predictions_errors) / -m + cost_regularization;
   
+  grad = backPropagation(model, layers, vectorized_predictions, m, lambda);
+  
 endfunction
