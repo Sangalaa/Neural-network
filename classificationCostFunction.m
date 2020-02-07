@@ -16,6 +16,8 @@ function [J, grad] = classificationCostFunction(model, X, y, lambda)
   
   predictions_errors = sum(vectorized_predictions .* log(predictions) + (1 - vectorized_predictions) .* log(1 - predictions));
 
-  J = sum(predictions_errors) / -m;
+  cost_regularization = calculateCostRegularization(model, lambda, m);
+  
+  J = sum(predictions_errors) / -m + cost_regularization;
   
 endfunction
